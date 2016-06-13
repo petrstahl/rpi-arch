@@ -12,5 +12,8 @@ https://archlinuxarm.org/platforms/armv7/broadcom/raspberry-pi-2
 
 ## run
 
-    docker run --rm -it -p 3632:3632 raphaelmeyer/rpi-arch
+    docker run --rm -it --name rpi-distcc -p 3632:3632 -p 3666:3666 raphaelmeyer/rpi-arch
+
+distcc http statistics server is running on port 3666
+
 
